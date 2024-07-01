@@ -48,6 +48,5 @@ steps:
 images: ['gcr.io/$PROJECT_ID/$_TFX_IMAGE_NAME:$TAG_NAME']
 
 options:
-  build:
-    options:
-      default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
+  logging: CLOUD_LOGGING_ONLY  # Ou l'option de logging que vous préférez
+  substitution_option: ALLOW_LOOSE  # Option facultative, si nécessaire
